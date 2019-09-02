@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#C41A36">
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="OPTIONS"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView"
+        android:layout_above="@+id/switch_sound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        />
+
+    <Switch
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Sound"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/switch_sound"
+        android:layout_above="@+id/switch_vibration"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Vibration"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/switch_vibration"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

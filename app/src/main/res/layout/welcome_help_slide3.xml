@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen3">
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imageView"
+            android:background="@drawable/help3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mine number indicates the number of mines in its neighbouring cells. Each cell will have atmost 8 neighbouring cells. Mine number = 1 means, there is a mine present in its neighbouring cells and if mine number = 2 means, there is 2 mines present in its neighbouring cells and so on"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>

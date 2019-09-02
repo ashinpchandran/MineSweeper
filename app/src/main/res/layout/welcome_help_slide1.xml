@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen1">
+
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/help1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are 16x10 = 160 cells in the grid, out of which 15 contains mine. click on all the cells which don't contain mines to win the game."
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>
